@@ -10,7 +10,7 @@
 <table class="table row-vcenter">
   <tr>
     <td><strong>Assignment</strong></td>
-    <td><%= @submission.assignment.name %></td>
+    <td><%= link_to, @submission.assignment.name, assignment_path(@submission.assignment) %></td>
   </tr>
   <% if @submission.team.nil? %>
     <tr>
